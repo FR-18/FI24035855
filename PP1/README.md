@@ -5,7 +5,8 @@ Video de referencia
 
 ¿Es posible implementar una solución equivalente pero de comportamiento iterativo?
 
-Considero que sí, esto utilizando algún ciclo while o for. De algún modo se debe poder hacer al llevar el resultado hasta 0 y recuperando los residuos-
+Considero que sí, esto utilizando algún ciclo while o for. De algún modo se debe poder hacer al llevar el resultado hasta 0 y recuperando los residuos.
+
 
 ¿Cree que hay alguna otra manera recursiva de generar el mismo resultado?
 
