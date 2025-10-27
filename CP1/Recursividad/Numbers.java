@@ -1,5 +1,4 @@
 public class Numbers {
-
     private static double N = 25;
 
     public static double formula(double z) {
@@ -7,25 +6,55 @@ public class Numbers {
     }
 
     public static double recursive(double z) {
-        return round(recursive(z, N) / recursive(z, N - 1));
+        if (z==0) {
+            return 1.0;
+        }
+        if (N < 2) {
+            return z;
+        } else {
+            return round(recursive(z, N) / recursive(z, N - 1));
+        }
     }
 
     public static double iterative(double z) {
-        return round(iterative(z, N) / iterative(z, N - 1));
+        if (z==0) {
+            return 1.0;
+        }
+        if (N < 2) {
+            return z;
+        } else {
+            return round(iterative(z, N) / iterative(z, N - 1));
+        }
     }
 
     private static double recursive(double z, double n) {
-        return n == 0 || n == 1 ? z : recursive(z, n - 1) + recursive(z, n - 2);
+        return n == 0 ? 0 : n == 1 ? 1 : z*recursive(z, n - 1) + recursive(z, n - 2);
     }
 
     private static double iterative(double z, double n) {
-        return 1.0;
+        if(n==0){
+            return 0;
+        }
+        if (n==1){
+            return 1;
+        }
+        double a=0;
+        double b=1;
+        double c=0;
+        
+        for(int i=2; i <= n; i++){
+            c=z*b+a;
+            a=b;
+            b=c;
+        }
+        return b;
     }
 
-    private double round(double value) {
-        var ROUND = 10000000000.0;
+    private static double round(double value) {
+        double ROUND = 10000000000.0;
         return Math.round(value * ROUND) / ROUND;
     }
+
 
     public static void main(String[] args) {
         String[] metallics = {
@@ -48,3 +77,4 @@ public class Numbers {
         }
     }
 }
+// Se utilizó Gemini
