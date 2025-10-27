@@ -77,4 +77,4 @@ public class Numbers {
         }
     }
 }
-// Se utilizó Gemini
+// Se utilizó Gemini para consultas
