@@ -1,6 +1,9 @@
 # Práctica Programada 3.
 
-**Estudiante:** Freddy Gabriel Rodríguez Brenes.
+**Estudiante:** 
+
+Freddy Gabriel Rodríguez Brenes.
+
 **Carné:** FI24035855.
 **IDE utilizado:** NetBeans.
 **Prompt utilizado:** *https://gemini.google.com/app/c7ed01ff51368525?hl=es*
