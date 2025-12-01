@@ -39,3 +39,6 @@ public class CustomGraph {
         return builder.toString();
     }
 }
+
+// Chatbot utilizado: Gemini
+//Enlace: https://gemini.google.com/share/545c83a1c6a5
