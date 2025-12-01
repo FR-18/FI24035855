@@ -14,8 +14,23 @@ public class CustomTree {
 
     private TreeNode insert(TreeNode node, double tf, String word) {
 
-        // Actualizar
+        if (node == null) {
+        var newNode = new TreeNode(tf);
+        newNode.addWord(word); 
+        return newNode;
+    }
 
+        if (tf < node.getTf()) {
+        node.setLeft( insert(node.getLeft(), tf, word) );
+    }
+
+    else if (tf > node.getTf()) {
+        node.setRight( insert(node.getRight(), tf, word) );
+    }
+
+    else {
+        node.addWord(word); 
+    }
         return node;
     }
 
